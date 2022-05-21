@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/font.css);
+
+@import url(../blocks/root/root.css);
+@import url(../blocks/main-page/main-page.css);
+@import url(../blocks/center/center.css);
+
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__describe/profile__describe.css);
+
+div, section, p, img, h1, h3, nav{
+    outline: 1px solid cornflowerblue;
+}
