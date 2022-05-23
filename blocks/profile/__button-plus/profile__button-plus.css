@@ -1,0 +1,10 @@
+.profile__button-plus {
+    background-image: url("../../../images/button-plus.svg");
+    margin-right: 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0 0 0 244px;
+}
