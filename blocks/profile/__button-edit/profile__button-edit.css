@@ -5,4 +5,10 @@
     height: 24px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile__button-edit:hover {
+    opacity: 0.6;
 }

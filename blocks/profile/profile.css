@@ -1,8 +1,7 @@
 .profile {
     display: flex;
     flex-direction: row;
-    max-width: 880px;
     min-height: 120px;
-    margin: 40px auto 0 auto;
+    margin-top: 40px ;
     align-items: start;
 }

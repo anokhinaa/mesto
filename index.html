@@ -19,8 +19,11 @@
         <section class="profile">
             <img src="/images/profile_image.png" alt="Кусто" class="profile__avatar">
             <div class="profile__info">
-                <h1 class="profile__name">Жак-Ив Кусто</h1>
-                <button type="button" class="profile__button-edit"></button>
+                <div class="profile__heading">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__button-edit"></button>
+                </div>
+
                 <p class="profile__about">Исследователь океана</p>
             </div>
             <button type="button" class="profile__button-plus"></button>
@@ -28,65 +31,67 @@
         </section>
 
         <section class="elements center">
+
             <div class="elements__element">
                 <div class="elements__rectangle">
-                    <img src="images/karachaevsk.png" alt="Карачаевск" class="elements__image">
+                    <img src="images/PARIS.png" alt="Париж" class="elements__image">
                     <div class="elements__description">
-                        <h4 class="elements__title">Карачаевск</h4>
-                        <img src="images/like.png" alt="Лайк" сlass="elements__like">
+                        <h4 class="elements__title">Париж</h4>
+                        <button type="button" class="elements__like"></button>
                     </div>
                 </div>
             </div>
 
             <div class="elements__element">
                 <div class="elements__rectangle">
-                    <img src="images/karachaevsk.png" alt="Карачаевск" class="elements__image">
+                    <img src="images/PHUKET.png" alt="Пхукет" class="elements__image">
                     <div class="elements__description">
-                        <h4 class="elements__title">Карачаевск</h4>
-                        <img src="images/like.png" alt="Лайк" сlass="elements__like">
+                        <h4 class="elements__title">Пхукет</h4>
+                        <button type="button" class="elements__like"></button>
                     </div>
                 </div>
             </div>
 
             <div class="elements__element">
                 <div class="elements__rectangle">
-                    <img src="images/karachaevsk.png" alt="Карачаевск" class="elements__image">
+                    <img src="images/LIMA.png" alt="Лима" class="elements__image">
                     <div class="elements__description">
-                        <h4 class="elements__title">Карачаевск</h4>
-                        <img src="images/like.png" alt="Лайк" сlass="elements__like">
+                        <h4 class="elements__title">Лима</h4>
+                        <button type="button" class="elements__like"></button>
                     </div>
                 </div>
             </div>
 
             <div class="elements__element">
                 <div class="elements__rectangle">
-                    <img src="images/karachaevsk.png" alt="Карачаевск" class="elements__image">
+                    <img src="images/BUENOS.png" alt="Буэнос Айрес" class="elements__image">
                     <div class="elements__description">
-                        <h4 class="elements__title">Карачаевск</h4>
-                        <img src="images/like.png" alt="Лайк" сlass="elements__like">
+                        <h4 class="elements__title">Буэнос Айрес</h4>
+                        <button type="button" class="elements__like"></button>
                     </div>
                 </div>
             </div>
 
             <div class="elements__element">
                 <div class="elements__rectangle">
-                    <img src="images/karachaevsk.png" alt="Карачаевск" class="elements__image">
+                    <img src="images/RIO.png" alt="Рио" class="elements__image">
                     <div class="elements__description">
-                        <h4 class="elements__title">Карачаевск</h4>
-                        <img src="images/like.png" alt="Лайк" сlass="elements__like">
+                        <h4 class="elements__title">Рио</h4>
+                        <button type="button" class="elements__like"></button>
                     </div>
                 </div>
             </div>
 
             <div class="elements__element">
                 <div class="elements__rectangle">
-                    <img src="images/karachaevsk.png" alt="Карачаевск" class="elements__image">
+                    <img src="images/AUSTRALIA.png" alt="Австралия" class="elements__image">
                     <div class="elements__description">
-                        <h4 class="elements__title">Карачаевск</h4>
-                        <img src="images/like.png" alt="Лайк" сlass="elements__like">
+                        <h4 class="elements__title">Астралия Голд-Кост</h4>
+                        <button type="button" class="elements__like"></button>
                     </div>
                 </div>
             </div>
+
 
         </section>
 
@@ -97,12 +102,13 @@
     </footer>
 
     <div class="popup">
-        <div class="popup__content">
+        <div class="popup__container">
             <button class="popup__close"></button>
             <form action="" class="popup__form">
                 <h3 class="popup__title">Редактировать профиль</h3>
                 <input name="name" type="text" class="popup__input popup__input_name" placeHolder="Жак-Ив Кусто">
-                <input name="nameAbout" type="text" class="popup__input popup__input_name" placeHolder="Исследователь океана">
+                <input name="nameAbout" type="text" class="popup__input popup__input_name"
+                       placeHolder="Исследователь океана">
                 <button type="submit" class="popup__button">Сохранить</button>
             </form>
         </div>
