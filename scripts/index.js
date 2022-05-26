@@ -44,7 +44,6 @@ function formSubmitHandler(event) {
 }
 
 function detectClickOutside(event) {
-    console.log(event.target)
     if (event.target.classList.contains('popup')) {
         closePopup(popup);
     }

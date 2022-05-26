@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta name="description" content="Галерея мест">
+    <meta name="keywords" content="места, города, страны">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
@@ -8,16 +10,15 @@
 </head>
 <body class="root">
 
-<div class="main-page center">
-    <div class="header">
+<div class="main-page">
+    <header class="header">
         <img src="./images/logo_mesto.svg" alt="Лого" class="header__logo">
-        <div class="header__line"></div>
-    </div>
+    </header>
 
     <main class="content">
 
         <section class="profile">
-            <img src="./images/profile_image.png" alt="Кусто" class="profile__avatar">
+            <img src="./images/profile_image.png" alt="Аватар" class="profile__avatar">
             <div class="profile__info">
                 <button type="button" class="profile__button-edit"></button>
                 <h1 class="profile__name">Жак-Ив Кусто</h1>
@@ -30,64 +31,64 @@
 
         </section>
 
-        <section class="elements center">
+        <section class="cards">
 
-            <div class="elements__element">
-                <div class="elements__rectangle">
-                    <img src="images/PARIS.png" alt="Париж" class="elements__image">
-                    <div class="elements__description">
-                        <h4 class="elements__title">Париж</h4>
-                        <button type="button" class="elements__like"></button>
+            <div class="cards__element">
+                <div class="cards__info">
+                    <img src="images/PARIS.jpg" alt="Париж" class="cards__image">
+                    <div class="cards__description">
+                        <h2 class="cards__title">Париж</h2>
+                        <button type="button" class="cards__like"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="elements__element">
-                <div class="elements__rectangle">
-                    <img src="images/PHUKET.png" alt="Пхукет" class="elements__image">
-                    <div class="elements__description">
-                        <h4 class="elements__title">Пхукет</h4>
-                        <button type="button" class="elements__like"></button>
+            <div class="cards__element">
+                <div class="cards__info">
+                    <img src="images/PHUKET.jpg" alt="Пхукет" class="cards__image">
+                    <div class="cards__description">
+                        <h2 class="cards__title">Пхукет</h2>
+                        <button type="button" class="cards__like"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="elements__element">
-                <div class="elements__rectangle">
-                    <img src="images/LIMA.png" alt="Лима" class="elements__image">
-                    <div class="elements__description">
-                        <h4 class="elements__title">Лима</h4>
-                        <button type="button" class="elements__like"></button>
+            <div class="cards__element">
+                <div class="cards__info">
+                    <img src="images/LIMA.jpg" alt="Лима" class="cards__image">
+                    <div class="cards__description">
+                        <h2 class="cards__title">Лима</h2>
+                        <button type="button" class="cards__like"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="elements__element">
-                <div class="elements__rectangle">
-                    <img src="images/BUENOS.png" alt="Буэнос Айрес" class="elements__image">
-                    <div class="elements__description">
-                        <h4 class="elements__title">Буэнос Айрес</h4>
-                        <button type="button" class="elements__like"></button>
+            <div class="cards__element">
+                <div class="cards__info">
+                    <img src="images/BUENOS.jpg" alt="Буэнос Айрес" class="cards__image">
+                    <div class="cards__description">
+                        <h2 class="cards__title">Буэнос Айрес</h2>
+                        <button type="button" class="cards__like"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="elements__element">
-                <div class="elements__rectangle">
-                    <img src="images/RIO.png" alt="Рио" class="elements__image">
-                    <div class="elements__description">
-                        <h4 class="elements__title">Рио</h4>
-                        <button type="button" class="elements__like"></button>
+            <div class="cards__element">
+                <div class="cards__info">
+                    <img src="images/RIO.jpg" alt="Рио" class="cards__image">
+                    <div class="cards__description">
+                        <h2 class="cards__title">Рио</h2>
+                        <button type="button" class="cards__like"></button>
                     </div>
                 </div>
             </div>
 
-            <div class="elements__element">
-                <div class="elements__rectangle">
-                    <img src="images/AUSTRALIA.png" alt="Австралия" class="elements__image">
-                    <div class="elements__description">
-                        <h4 class="elements__title">Астралия Голд-Кост</h4>
-                        <button type="button" class="elements__like"></button>
+            <div class="cards__element">
+                <div class="cards__info">
+                    <img src="images/AUSTRALIA.jpg" alt="Австралия" class="cards__image">
+                    <div class="cards__description">
+                        <h2 class="cards__title">Астралия Голд-Кост</h2>
+                        <button type="button" class="cards__like"></button>
                     </div>
                 </div>
             </div>
@@ -101,18 +102,18 @@
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <section class="popup">
         <div class="popup__container">
-            <button class="popup__close"></button>
+            <button type="button" class="popup__close"></button>
             <form class="popup__form">
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <input name="name" type="text" class="popup__input popup__input_name" placeholder="Жак-Ив Кусто">
-                <input name="nameAbout" type="text" class="popup__input popup__input_name"
-                       placeholder="Исследователь океана">
+                <input name="name" type="text" class="popup__input" placeholder="Имя">
+                <input name="nameAbout" type="text" class="popup__input"
+                       placeholder="Описание">
                 <button type="submit" class="popup__button">Сохранить</button>
             </form>
         </div>
-    </div>
+    </section>
 
 </div>
 <script src="./scripts/index.js"></script>

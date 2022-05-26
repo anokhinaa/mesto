@@ -11,15 +11,8 @@
     align-items: center;
 }
 
-.popup_opened {
-    display: flex;
-}
 
-@media screen and (max-width: 1279px) {
-    .popup {
 
-    }
-}
 
 
 

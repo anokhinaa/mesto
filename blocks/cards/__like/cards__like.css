@@ -1,4 +1,4 @@
-.elements__like {
+.cards__like {
     width: 22px;
     height: 19px;
     background: url("../../../images/like.png");
@@ -7,11 +7,7 @@
     flex-shrink: 0;
 }
 
-.elements__like:hover {
+.cards__like:hover {
     opacity: 0.5;
 }
 
-.elements__like:active {
-    background: url("../../../images/like-active.png");
-    opacity: 1;
-}
