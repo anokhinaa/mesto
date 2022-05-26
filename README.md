@@ -19,6 +19,6 @@
 
 Использовался flex, grid, функции calc, псевдоклассы hover и after.
 
-* [Ссылка на на проект](https://anokhinaa.github.io/russian-travel/)
+* [Ссылка на на проект](https://anokhinaa.github.io/mesto/index.html)
 
 Выполнила Анохина Ася
