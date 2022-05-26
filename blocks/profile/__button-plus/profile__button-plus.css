@@ -1,9 +1,11 @@
 .profile__button-plus {
     background-image: url("../../../images/button-plus.svg");
+    background-position: center;
     background-repeat: no-repeat;
     width: 150px;
     height: 50px;
-    border: none;
+    border: 2px solid white;
+    border-radius: 2px;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
