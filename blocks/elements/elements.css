@@ -6,3 +6,11 @@
     box-sizing: border-box;
     gap: 20px 17px;
 }
+
+@media screen and (max-width: 1279px) {
+    .elements {
+        width: 320px;
+        grid-template-columns: repeat(1, auto);
+        margin: 39px 19px 0 19px;
+    }
+}

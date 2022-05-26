@@ -4,3 +4,9 @@
     /*flex-direction: column;*/
     /*margin: auto;*/
 }
+
+@media screen and (max-width: 1279px) {
+    .main-page {
+        max-width: 320px;
+    }
+}

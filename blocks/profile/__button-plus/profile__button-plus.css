@@ -1,5 +1,6 @@
 .profile__button-plus {
     background-image: url("../../../images/button-plus.svg");
+    background-repeat: no-repeat;
     width: 150px;
     height: 50px;
     border: none;
@@ -7,8 +8,17 @@
     padding: 0;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .profile__button-plus:hover {
     opacity: 0.6;
+}
+
+@media screen and (max-width: 1279px) {
+    .profile__button-plus {
+        width: 282px;
+        margin: auto;
+    }
 }

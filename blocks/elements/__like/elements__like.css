@@ -4,6 +4,7 @@
     background: url("../../../images/like.png");
     border: none;
     transition: opacity 0.3s ease-in-out;
+    flex-shrink: 0;
 }
 
 .elements__like:hover {
