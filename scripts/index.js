@@ -51,6 +51,10 @@ const contentFormElement = popupContent.querySelector('.popup__form');
 const contentNameFieldElement = contentFormElement.querySelector('[name="name"]');
 const contentLinkFieldElement = contentFormElement.querySelector('[name="link"]');
 
+const popupView = document.querySelector('.popup__view');
+const viewImageElement = popupView.querySelector('.popup__image');
+const viewDescrElement = popupView.querySelector('.popup__description');
+
 // Функции для работы с карточками
 function createCardElement (name, alt, link) {
     const element = cardsTemplateElement.content.querySelector('.cards__element').cloneNode(true);
@@ -65,8 +69,15 @@ function createCardElement (name, alt, link) {
         card.remove();
     });
     const likeButton = element.querySelector('.cards__like');
-    likeButton.addEventListener("click", evt =>{
+    likeButton.addEventListener("click", evt => {
         evt.currentTarget.classList.toggle("cards__like_active");
+    });
+    img.addEventListener("click", evt => {
+        const info = evt.currentTarget.closest('.cards__info');
+        const titleElement = info.querySelector('.cards__title');
+        viewImageElement.src = evt.currentTarget.src;
+        viewDescrElement.textContent = titleElement.textContent;
+        openPopup(popupView);
     });
     return element;
 }
