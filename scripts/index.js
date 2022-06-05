@@ -46,17 +46,17 @@ const aboutElement = document.querySelector('.profile__about');
 
 const closePopButtons = document.querySelectorAll('.popup__close');
 
-const popupProfile = document.querySelector('.popup__profile');
+const popupProfile = document.querySelector('.popup-profile');
 const profileFormElement = popupProfile.querySelector('.popup__form');
 const profileNameFieldElement = profileFormElement.querySelector('[name="name"]');
 const profileNameAboutFieldElement = profileFormElement.querySelector('[name="nameAbout"]');
 
-const popupContent = document.querySelector('.popup__content');
+const popupContent = document.querySelector('.popup-content');
 const contentFormElement = popupContent.querySelector('.popup__form');
 const contentNameFieldElement = contentFormElement.querySelector('[name="name"]');
 const contentLinkFieldElement = contentFormElement.querySelector('[name="link"]');
 
-const popupView = document.querySelector('.popup__view');
+const popupView = document.querySelector('.popup-view');
 const viewImageElement = popupView.querySelector('.popup__image');
 const viewDescrElement = popupView.querySelector('.popup__description');
 
