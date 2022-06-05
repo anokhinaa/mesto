@@ -101,7 +101,7 @@
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-    <section class="popup">
+    <section class="popup popup__profile">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
             <form class="popup__form" name="popup_form">
@@ -114,6 +114,18 @@
         </div>
     </section>
 
+    <section class="popup popup__content">
+        <div class="popup__container">
+            <button type="button" class="popup__close"></button>
+            <form class="popup__form" name="popup_form">
+                <h3 class="popup__title">Новое место</h3>
+                <input name="name" type="text" class="popup__input" placeholder="Название">
+                <input name="link" type="text" class="popup__input"
+                       placeholder="Ссылка на картинку">
+                <button type="submit" class="popup__button">Создать</button>
+            </form>
+        </div>
+    </section>
 
 
 </div>

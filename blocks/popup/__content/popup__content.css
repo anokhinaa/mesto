@@ -1,16 +1,12 @@
-.popup__container {
+.popup__content {
     background-color: #ffff;
     border-radius: 10px;
     padding: 36px;
     position: absolute;
-    /*visibility: hidden;*/
-    /*opacity: 0;*/
-    /*transition: visibility 0s, opacity 0.5s linear;*/
 }
 
-
 @media screen and (max-width: 1279px) {
-    .popup__container {
+    .popup__content {
         padding: 25px 22px;
     }
 }
