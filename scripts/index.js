@@ -4,30 +4,35 @@ const initialCards = [
         alt: 'Австралия',
         link: './images/AUSTRALIA_3.JPG'
     },
-    {
-        name: 'Алтай',
-        alt: 'Алтай',
-        link: './images/ALTAI_1.JPG'
-    },
-    {
-        name: 'Рио-де-Жанейро',
-        alt: 'Рио',
-        link: './images/RIO_1.JPG'
-    },
-    {
-        name: 'Париж',
-        alt: 'Париж',
-        link: './images/PARIS_1.JPG'
-    },
+
     {
         name: 'Сумароково, Кострома',
         alt: 'Кострома',
         link: './images/SUMAROKOVO_2.JPG'
     },
+
+    {
+        name: 'Алтай',
+        alt: 'Алтай',
+        link: './images/ALTAI_1.JPG'
+    },
+
+    {
+        name: 'Корковаду',
+        alt: 'Корковаду',
+        link: './images/RIO_3.JPG'
+    },
+
     {
         name: 'Лима',
         alt: 'Lima',
         link: './images/LIMA_2.JPG'
+    },
+
+    {
+        name: 'Ипанема',
+        alt: 'Рио',
+        link: './images/RIO_1.JPG'
     }
 ];
 
