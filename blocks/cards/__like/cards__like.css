@@ -5,6 +5,7 @@
     border: none;
     transition: opacity 0.3s ease-in-out;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .cards__like:hover {
