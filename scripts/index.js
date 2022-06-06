@@ -89,7 +89,7 @@ function createCardElement (name, alt, link) {
 
 function addCardElement (name, alt, link) {
     const element = createCardElement(name, alt, link);
-    cardsSection.append(element);
+    cardsSection.prepend(element);
 }
 
 // Функции для работы с попапами
