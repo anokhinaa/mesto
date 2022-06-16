@@ -19,6 +19,7 @@
     opacity: 0.6;
 }
 
+
 @media screen and (max-width: 1279px) {
     .popup__button {
         max-width: 238px;
