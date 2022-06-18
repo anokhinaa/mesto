@@ -102,21 +102,22 @@ function setHandlerClickOutside(sectionPopup) {
     sectionPopup.addEventListener('click', detectClickOutside);
 }
 
-function closePopup(popupEl) {
-    popupEl.classList.remove('popup_opened')
-}
-
-function handleEsc(popupEl, evt) {
+function handleEsc(evt) {
     if (evt.key !== "Escape") {
         return;
     }
+    const popupEl = document.querySelector('.popup_opened');
     closePopup(popupEl);
-    document.removeEventListener('keydown', handleEsc);
 }
 
 function openPopup(popupEl) {
     popupEl.classList.add('popup_opened');
-    document.addEventListener('keydown', handleEsc.bind(null, popupEl));
+    document.addEventListener('keydown', handleEsc);
+}
+
+function closePopup(popupEl) {
+    popupEl.classList.remove('popup_opened')
+    document.removeEventListener('keydown', handleEsc);
 }
 
 function raiseOpenEvent(formEl) {
