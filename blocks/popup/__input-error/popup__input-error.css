@@ -13,3 +13,8 @@
     word-break: break-all;
 }
 
+@media screen and (max-width: 1279px) {
+    .popup__input-error  {
+        max-width: 238px;
+    }
+}

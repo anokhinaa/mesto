@@ -40,7 +40,9 @@ function enableFormValidation(conf, formElement) {
     const inputPairsList = inputsList.map((v, i) => {
         return {'input': v, 'error': errorsList[i]};
     });
-    // toggleButtonState(inputsList, buttonEl, conf.inactiveButtonClass);
+    formElement.addEventListener('open', () => {
+        toggleButtonState(inputsList, buttonEl, conf.inactiveButtonClass);
+    });
     inputPairsList.forEach((inputPair) => {
         inputPair.input.addEventListener('input', () => {
             checkInputValidity(inputPair, conf.inputErrorClass, conf.activeErrorClass);
